@@ -1,23 +1,11 @@
 fetch('http://api.kanye.rest/')
 .then(response=> response.json())
-// .then(data => console.log(data.quote))
+// .then(data => console.log(data.quote)) //console.logs quote from kanye
 .then(data => document.getElementById("quote").innerHTML = "\"" + data.quote + ".\"");
 
-// document.getElementById("quote").innerHTML = data; //data is not defined at this point
 
-//doesn't work at the moment
-const img = document.getElementById("image")
-
-// img.setAttribute("src", )
-
-// let imageData = []
+const img = document.getElementById("image")  //dom selects image element and saves it to variable
 
 fetch('https://picsum.photos/v2/list')
 .then(response=> response.json())
-// .then(data => console.log(data[0].download_url))
-.then(data => img.setAttribute("src", data[0].download_url))
-// .then(data => imageData = data)
-
-// console.log(imageData)
-// .then(data => img.setAttribute("src", ""+data[0].url+""));
-
+.then(data => img.setAttribute("src", data[0].download_url)) //sets image attribute to data[0].download_url
