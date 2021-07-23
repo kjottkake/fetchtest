@@ -14,8 +14,14 @@ h2 {
     text-align: center;
 }
 
-img {
+#image {
     width: 40%;
     margin: auto;
     display: block;
+}
+
+img {
+    width: fit-content;
+    display: block;
+    margin: auto;
 }
