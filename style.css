@@ -13,3 +13,9 @@ h1 {
 h2 {
     text-align: center;
 }
+
+img {
+    width: 40%;
+    margin: auto;
+    display: block;
+}
