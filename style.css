@@ -1,0 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(151,155,171,255);
+    background: radial-gradient(circle, rgb(191, 198, 243) 0%, rgb(159, 162, 170) 100%);
+    color:rgb(236, 236, 236);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5%;
+}
