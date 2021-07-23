@@ -1,4 +1,4 @@
-fetch('http://api.kanye.rest/')
+fetch('https://api.kanye.rest/')
 .then(response=> response.json())
 // .then(data => console.log(data.quote)) //console.logs quote from kanye
 .then(data => document.getElementById("quote").innerHTML = "\"" + data.quote + ".\"");
